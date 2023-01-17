@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="icon" type="image/png" href="images/logo2.png">
+</head>
+<body>
+
+
+<header>
+	
+	<h1>Reggaeton Sound Fest</h1>
+
+	<a href="index.html"><img src="images/logo2160.png" alt="RSF Logo"></a>
+
+	<nav>
+		<ul>
+			<li><a href="artists.html">Artists</a></li>
+			<li><a href="locations.html">Locations</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+		</ul>
+	</nav>
+
+</header>
+
+
+<main>
+
+<article>
+
+<h2>Contact Us</h2>
+
+<form action="post">
+	
+<fieldset>
+	<legend>Personal Data</legend>
+	
+	<div>
+		<label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+	</div>
+
+	<div>
+		<label for="surnames">Surnames:</label>
+        <input type="text" name="surnames" id="surnames" required>
+	</div>
+
+	<div>
+		 <label for="phone">Phone number:</label>
+		<input type="tel" id="phone" name="phone" required> 
+	</div>
+
+	<div>
+		 <label for="email">Email:</label>
+		<input type="email" id="email" name="email" required> 
+	</div>
+
+	<div>
+		<label>Sex:</label>
+        <label><input type="radio" name="sex" value="male" id="male">Male</label>
+        <label><input type="radio" name="sex" value="female" id="female">Female</label>
+	</div>
+
+</fieldset>
+
+
+<fieldset>
+	<legend>Requested info</legend>
+	<div>
+		 <label>Do you have any problem?</label>
+                            
+          <select name="problems" id="problems" required>
+            <option value="">No</option>
+            <option value="ticket problem">Ticket problem</option>
+            <option value="payment problem">Payment problem</option>
+            <option value="refound problem">Refound problem</option>
+            <option value="another problem">Another problem</option>
+          </select>
+	</div>
+
+	<div>
+		<p>Please, tell us about your problem:</p>
+		<textarea cols="45" rows="5"></textarea>
+	</div>
+
+	<div>
+		 <label>Do you need any information?</label>
+                            
+          <select name="information" id="information" required>
+            <option value="">No</option>
+            <option value="dates info">Dates info</option>
+            <option value="tickets info">Tickets info</option>
+            <option value="artists info">Artists info</option>
+            <option value="locations info">Locations info</option>
+            <option value="other info">Other info</option>
+          </select>
+	</div>
+
+	<div>
+		<p>Please, tell us what do you need:</p>
+		<textarea cols="45" rows="5"></textarea>
+	</div>
+
+</fieldset>
+
+
+<fieldset>
+	<legend>Contact via</legend>
+	<div>
+		<label>How can we contact you?</label>
+                            
+                            <label for="contact_1"><input type="checkbox" name="contact_1" value="via email" id="contact_1">Email</label>
+                            
+                            <label for="contact_2"><input type="checkbox" name="contact_2" value="via phone call" id="contact_2">Phone call</label>
+                            
+                            <label for="contact_3"><input type="checkbox" name="contact_3" value="via phone message" id="contact_3">Phone message</label>
+
+	</div>
+
+</fieldset>
+
+
+     <button type="reset">Reset form</button>
+     <button type="submit">Send request</button>
+
+</form>
+
+
+</article>
+
+</main>
+
+
+
+
+<footer>
+	
+<p>&#169; Copyright RSF 2022 - All rights reserved /  Find out about our <a href="policies/privacypolicies.html" target="_blank">privacy policies</a></p>
+<img src="images/logo160.png" alt="RSF Footer Logo">
+</footer>
+
+
+</body>
+</html>
