@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+main {
+	margin: 0px auto;
+	background: #7b60ce;
+}
+
+#trailer-container {
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+
+header {
+	background: white;
+	height: 100px;
+	position: sticky;
+	top: 0;
+}
+
+p {
+	font-family: NunitoSans;
+	font-size: 1.3em;
+}
+
+h1 {
+	color: red;
+	font-family: "CallingHeart";
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 1;
+}
+
+
+header > a > img {
+	float: right;
+	margin-right: 20px;
+	margin-top: 5px;
+	width: 6%;
+}
+
+header > nav {
+	display: inline-block;
+}
+
+header > nav > ul {
+		display: flex;
+		list-style-type: none;
+		margin-left: 39%;
+}
+
+header > nav > ul > li {
+	padding: 40px 50px;
+	text-align: center;
+
+}
+
+header > nav > ul > li > a {
+	display: inline-block;
+	text-decoration: none;
+	width: 76px;
+	font-family: "NunitoSans";
+	cursor: pointer;
+}
+
+body {
+	border: 2px solid blue;
+}
+
+footer {
+	border: 2px solid green;
+	background: green;
+}
+
+
+@font-face {
+	font-family: 'CallingHeart';
+	src: url('../fonts/CallingHeart.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src: url('../fonts/NunitoSansRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'AzeretMono';
+	src: url('../fonts/AzeretMonoRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
