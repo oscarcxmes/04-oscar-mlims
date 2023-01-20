@@ -9,27 +9,25 @@ html, body {
   box-sizing: border-box;
 }
 
-body {
-
+h1::selection {
+	background: #621e7d;
+	color: white;
 }
-
-main {
-	margin: 0px auto;
-	background: #7b60ce;
+h2::selection {
+	background: #621e7d;
+	color: white;
 }
-
-#trailer-container {
-	text-align: center;
-	margin-top: 20px;
-
+h3::selection {
+	background: #621e7d;
+	color: white;
 }
-
-
-header {
-	background: white;
-	height: 100px;
-	position: sticky;
-	top: 0;
+strong::selection {
+	background: #621e7d;
+	color: white;
+}
+p::selection {
+	background: #621e7d;
+	color: white;
 }
 
 p {
@@ -38,7 +36,7 @@ p {
 }
 
 h1 {
-	color: red;
+	color: #9885c5;
 	font-family: "CallingHeart";
 	padding-top: 30px;
 	padding-bottom: 20px;
@@ -47,41 +45,104 @@ h1 {
 	font-weight: 1;
 }
 
+h2 {
+	text-align: center;
+}
+
+body {
+	background-image: url(../images/fondo3.jpg);
+
+
+}
+
+main {
+	margin: 0px auto;
+	width: 80%;
+	background: white;
+	letter-spacing: 1.2px;
+	box-shadow: 0px 0px 14px 0px #9885c5;
+
+}
+
+section {
+	
+	margin: 0 auto;
+
+
+}
+
+#trailer-container {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+
+header {
+	background: white;
+	position: sticky;
+	top: 0;
+
+	display: flex;
+	flex-direction: row;
+
+	margin: 0 auto;
+	
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+
+	box-shadow: 0px 0px 14px 0px #9885c5;
+
+
+	/**background-image: linear-gradient(#8372aa, #9885c5, #8372aa);**/
+}
+
 
 header > a > img {
-	float: right;
-	margin-right: 20px;
-	margin-top: 5px;
-	width: 6%;
+	width: 5%;
+	position: absolute;
+	right: 20px;
+	top: 2px;
 }
 
 header > nav {
-	display: inline-block;
+	text-align: center;
+	display: flex;
+}
+
+#menu a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
 }
 
 header > nav > ul {
-		display: flex;
 		list-style-type: none;
-		margin-left: 39%;
 }
 
 header > nav > ul > li {
-	padding: 40px 50px;
+	display: inline-block;
+	text-align: center;
+}
+
+header > nav > ul > li > a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "NunitoSans";
+	cursor: pointer;
+	color: 	#621e7d;
+	letter-spacing: 1.2px;
 	text-align: center;
 
 }
 
-header > nav > ul > li > a {
-	display: inline-block;
-	text-decoration: none;
-	width: 76px;
-	font-family: "NunitoSans";
-	cursor: pointer;
+header > nav > ul > li > a:hover{
+	color: white;
+	background: #621e7d;
 }
 
-body {
-	border: 2px solid blue;
-}
 
 footer {
 	border: 2px solid green;
