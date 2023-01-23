@@ -1,3 +1,6 @@
+/**Óscar Comes Guardiola**/
+
+/**RESET**/
 html, body {
   margin: 0;
   padding: 0;
@@ -9,98 +12,26 @@ html, body {
   box-sizing: border-box;
 }
 
-h1::selection {
-	background: #621e7d;
-	color: white;
-}
-h2::selection {
-	background: #621e7d;
-	color: white;
-}
-h3::selection {
-	background: #621e7d;
-	color: white;
-}
-strong::selection {
-	background: #621e7d;
-	color: white;
-}
-p::selection {
-	background: #621e7d;
-	color: white;
-}
-
-p {
-	font-family: NunitoSans;
-	font-size: 1.3em;
-}
-
-h1 {
-	color: #9885c5;
-	font-family: "CallingHeart";
-	padding-top: 30px;
-	padding-bottom: 20px;
-	text-align: center;
-	font-size: 50px;
-	font-weight: 1;
-}
-
-h2 {
-	text-align: center;
-}
-
-body {
-	background-image: url(../images/fondo3.jpg);
-
-
-}
-
-main {
-	margin: 0px auto;
-	width: 80%;
-	background: white;
-	letter-spacing: 1.2px;
-	box-shadow: 0px 0px 14px 0px #9885c5;
-
-}
-
-section {
-	
-	margin: 0 auto;
-
-
-}
-
-#trailer-container {
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-
-}
-
-
+/**HEADER (NAV MENU)**/
 header {
+	display: flex;
+	flex-direction: row;
+
 	background: white;
 	position: sticky;
 	top: 0;
 
-	display: flex;
-	flex-direction: row;
 
-	margin: 0 auto;
-	
+
 	border: 1px solid #a2a2a2;
 	background-color: #f4f4f4;
+	/**background-image: linear-gradient(to right, #cfbdd5,white,#cfbdd5,#cfbdd5);**/
 
 	box-shadow: 0px 0px 14px 0px #9885c5;
-
-
-	/**background-image: linear-gradient(#8372aa, #9885c5, #8372aa);**/
 }
 
-
 header > a > img {
-	width: 5%;
+	width: 5em;
 	position: absolute;
 	right: 20px;
 	top: 2px;
@@ -109,6 +40,7 @@ header > a > img {
 header > nav {
 	text-align: center;
 	display: flex;
+	/*margin-left: 10%;*/
 }
 
 #menu a {
@@ -135,7 +67,7 @@ header > nav > ul > li > a {
 	color: 	#621e7d;
 	letter-spacing: 1.2px;
 	text-align: center;
-
+	transition: .5s;
 }
 
 header > nav > ul > li > a:hover{
@@ -143,13 +75,334 @@ header > nav > ul > li > a:hover{
 	background: #621e7d;
 }
 
+/**SELECTION**/
+h1::selection {
+	background: #621e7d;
+	color: white;
+}
+h2::selection {
+	background: #621e7d;
+	color: white;
+}
+h3::selection {
+	background: #621e7d;
+	color: white;
+}
+strong::selection {
+	background: #621e7d;
+	color: white;
+}
+p::selection {
+	background: #621e7d;
+	color: white;
+}
 
-footer {
-	border: 2px solid green;
-	background: green;
+a::selection {
+	background: #621e7d;
+	color: white;
+}
+
+/**TEXT CONFIG**/
+
+p {
+	font-family: NunitoSans;
+	font-size: 1.3em;
+	text-align: justify;
+}
+
+strong {
+	color: #621e7d;
+	font-family: BreeSerif;
+}
+
+/**HEADERS CONFIG**/
+h1 {
+	color: #621e7d;
+	font-family: "BreeSerif";
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 1;
+	text-shadow: 2px 2px #beaaee;
+	font-weight: 900;
+}
+
+#homeh1	{
+	font-family: CallingHeart;
+	padding-top: 30px;
+}
+
+h2, h3 {
+	text-align: center;
+	font-family: BreeSerif;
+}
+
+h2 {
+	font-size: 2.2em;
+	color: #621e7d;
+	text-shadow: 2px 2px #beaaee;
+}
+
+h3 {
+	font-size: 1.5em;
+	color: #621e7d;
+	text-shadow: 2px 2px #beaaee;
+	margin: .5em auto;
+}
+
+main a {
+	color: #8233b9;
 }
 
 
+
+
+
+
+.bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -100;
+}
+.bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+
+
+/**PAGE LAYOUT (GENERAL)**/
+body {
+	background-image: url(../images/fondo1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+main {
+	margin: 0px auto;
+	width: 80%;
+	background: white;
+	letter-spacing: 1.2px;
+	box-shadow: 0px 0px 14px 0px #9885c5;
+	padding-bottom: 1em;
+	display: flex;
+}
+
+section {
+	margin: 2.2em 5em;
+	background: white;
+}
+
+/**FOOTER**/
+footer {
+	background-image: linear-gradient(to right, #6233b9,#521266);
+	box-shadow: 0px 0px 40px 0px #9885c5;
+	margin: 0 10%;
+	display: flex;
+	padding: 2em 0;
+	justify-content: space-between;
+}
+
+footer > p {
+	font-family: AzeretMono;
+	color: white;
+	margin-left: 2em;
+	margin-top: .8em;
+	margin-right: 2em;
+
+}
+
+footer > img {
+	width: 7em;
+	margin-right: 2em;
+}
+
+footer > p > a {
+	color: white;
+}
+
+
+/***************   INDEX   **************/
+
+/**H1 AND LOGO BOXES**/
+#top-container > *{
+	margin: 0 0.5em;
+}
+
+#circle-logo {
+	width: 7em;
+}
+
+/**TRAILER VIDEO CONFIG**/
+#video-section > p{
+	text-align: center;
+}
+
+#trailer-container {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#top-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 1em;
+}
+
+/***************   ARTISTS   **************/
+
+
+.artist-box {
+	width: 80%;
+	border: 2px solid #6233b9;
+	box-shadow: 0px 0px 24px 4px #6233b9;
+	background-image: url(../images/prueba.jpg);
+}
+
+.artist-box > div {
+	display: flex;
+}
+
+.artist-box > div > figure {
+
+	margin: 0 2em;
+}
+
+.artist-box > div > figure > img{
+	border: 2px solid #6233b9;
+	box-shadow: 0px 0px 24px 4px #6233b9;
+
+
+
+}
+
+.artist-box > div > figure > figcaption{
+	color: #6233b9;
+	text-align: center;
+	margin: 1em 0 0.5em 0;
+	font-family: NunitoSans;
+
+
+}
+
+
+.artist-box > div > p{
+	font-size: 1.5em;
+	margin-left: 1em;
+}
+
+
+.artist-box > h3{
+	padding-bottom: 0.2em;
+	background: #6233b9;
+	color: white;
+
+
+}
+
+aside {
+ 	width: 20%;
+ 	float: right;
+
+}
+
+aside > nav {
+	flex-direction: column;
+}
+
+aside > nav > ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+aside > nav > ul > li {
+	margin: 1em auto;
+	text-align: center;
+	background: white;
+	width: 100%;
+}
+
+aside > nav > ul > li > a:hover{
+	color: white;
+	background: #621e7d;
+}
+
+aside > nav > ul > li:hover{
+	color: white;
+	background: #621e7d;
+}
+
+aside > nav > ul > li > a {
+	text-decoration: none;
+	font-size: 100%;
+	font-family: "NunitoSans";
+	cursor: pointer;
+	color: 	#621e7d;
+	letter-spacing: 1.2px;
+	text-align: center;
+	display: block;
+	width: 12em;
+	padding: 1em 0;
+	transition: .5s;
+}
+
+.article-w-aside > p {
+	width: 80%;
+	margin-left: 6%;
+}
+
+.video-box {
+	text-align: center;
+	margin: 2em 0;
+}
+
+
+/***************   LOCATIONS   **************/
+
+
+.article-w-content > p {
+	margin: 0 5%;
+}
+
+.location-box {
+	border: 2px solid #6233b9;
+	box-shadow: 0px 0px 24px 4px #6233b9;
+	margin: 3% 5% 6% 5%;
+
+}
+
+.location-box > p {
+	text-align: center;
+	color: #8600bb;
+	text-shadow: 0 0 7px #cf00ee;
+  font-family: BreeSerif;
+}
+
+.location-box > div {
+		display: flex;
+		flex:
+}
+
+
+
+
+
+
+
+
+
+
+/**FONTS**/
 @font-face {
 	font-family: 'CallingHeart';
 	src: url('../fonts/CallingHeart.ttf') format('truetype');
@@ -167,6 +420,13 @@ footer {
 @font-face {
 	font-family: 'AzeretMono';
 	src: url('../fonts/AzeretMonoRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'BreeSerif';
+	src: url('../fonts/BreeSerifRegular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: 400;
 }
