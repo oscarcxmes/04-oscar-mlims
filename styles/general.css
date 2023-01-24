@@ -72,7 +72,7 @@ header > nav > ul > li > a {
 
 header > nav > ul > li > a:hover{
 	color: white;
-	background: #621e7d;
+	background-image: linear-gradient(to right, #6233b9,#521266);
 }
 
 /**SELECTION**/
@@ -312,7 +312,6 @@ footer > p > a {
 aside {
  	width: 20%;
  	float: right;
-
 }
 
 aside > nav {
@@ -330,16 +329,15 @@ aside > nav > ul > li {
 	text-align: center;
 	background: white;
 	width: 100%;
+
 }
 
 aside > nav > ul > li > a:hover{
 	color: white;
-	background: #621e7d;
 }
 
 aside > nav > ul > li:hover{
-	color: white;
-	background: #621e7d;
+	background-image: linear-gradient(to right, #6233b9,#521266);
 }
 
 aside > nav > ul > li > a {
@@ -353,7 +351,7 @@ aside > nav > ul > li > a {
 	display: block;
 	width: 12em;
 	padding: 1em 0;
-	transition: .5s;
+
 }
 
 .article-w-aside > p {
@@ -386,11 +384,36 @@ aside > nav > ul > li > a {
 	color: #8600bb;
 	text-shadow: 0 0 7px #cf00ee;
   font-family: BreeSerif;
+  margin-bottom: 1%;
 }
 
 .location-box > div {
 		display: flex;
-		flex:
+		justify-content: center;
+}
+
+.address-box {
+	border: 2px solid red;
+	margin-right: 30px;
+}
+
+.address-box > address {
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+.address-box > iframe {
+
+}
+
+.address-description {
+	border: 2px solid green;
+	width: 66%;
+}
+
+.address-description > p {
+
+
 }
 
 
