@@ -75,6 +75,11 @@ header > nav > ul > li > a:hover{
 	background-image: linear-gradient(to right, #6233b9,#521266);
 }
 
+.active {
+		background-image: linear-gradient(to right, #6233b9,#521266);
+		color: white;
+}
+
 /**SELECTION**/
 h1::selection {
 	background: #621e7d;
@@ -100,6 +105,21 @@ p::selection {
 a::selection {
 	background: #621e7d;
 	color: white;
+}
+
+td::selection {
+	background: #621e7d;
+	color: white;
+}
+
+th::selection {
+	background: #621e7d;
+	color: white;
+}
+
+caption::selection {
+		background: #621e7d;
+		color: white;
 }
 
 /**TEXT CONFIG**/
@@ -265,7 +285,7 @@ footer > p > a {
 	width: 80%;
 	border: 2px solid #6233b9;
 	box-shadow: 0px 0px 24px 4px #6233b9;
-	background-image: url(../images/prueba.jpg);
+	background-image: url(../images/box-background.jpg);
 }
 
 .artist-box > div {
@@ -376,7 +396,8 @@ aside > nav > ul > li > a {
 	border: 2px solid #6233b9;
 	box-shadow: 0px 0px 24px 4px #6233b9;
 	margin: 3% 5% 6% 5%;
-
+	padding-bottom: 1.5vh;
+	background-image: url(../images/box-background.jpg);
 }
 
 .location-box > p {
@@ -385,6 +406,9 @@ aside > nav > ul > li > a {
 	text-shadow: 0 0 7px #cf00ee;
   font-family: BreeSerif;
   margin-bottom: 1%;
+  background: #6233b9;
+	color: white;
+	padding: .5vh 0;
 }
 
 .location-box > div {
@@ -393,33 +417,70 @@ aside > nav > ul > li > a {
 }
 
 .address-box {
-	border: 2px solid red;
 	margin-right: 30px;
 }
 
 .address-box > address {
 	margin-bottom: .5em;
 	text-align: center;
+	font-family: NunitoSans;
+	color: #8600bb;
+	text-shadow: 0 0 7px #6233b9;
+	font-size: 2vh;
 }
 
 .address-box > iframe {
-
+		box-shadow: 0px 0px 24px 4px #6233b9;
 }
 
 .address-description {
-	border: 2px solid green;
 	width: 66%;
 }
 
 .address-description > p {
-
-
+	margin: 0 1em;
+	font-size: 3vh;
+	line-height: 5vh;
 }
 
 
+/***************   TICKETS   **************/
 
 
+#tickets-section {
+	text-align: center;
+	box-shadow: 0px 0px 24px 4px #6233b9;
+	padding-bottom: 2em;
+	background-image: url(../images/tickets-background.jpg);
+}
 
+#tickets-section > table {
+	margin: 0 auto;
+	width: 90%;
+	padding: 1em 0;
+}
+
+caption {
+	font-family: BreeSerif;
+	font-size: 2.5em;
+	color: #621e7d;
+	text-shadow: 2px 2px #beaaee;
+	margin-top: .2em;
+}
+
+td, th {
+	padding: 5px;
+	font-family: NunitoSans;
+}
+
+th {
+	border: 2px solid #6233b9;
+	background: #6233b9;
+	color: white;
+	text-transform: uppercase;
+}
+
+/***************   CONTACT   **************/
 
 
 
