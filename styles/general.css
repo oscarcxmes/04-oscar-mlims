@@ -424,7 +424,7 @@ aside > nav > ul > li > a {
 	margin-bottom: .5em;
 	text-align: center;
 	font-family: NunitoSans;
-	color: #8600bb;
+	color: black;
 	text-shadow: 0 0 7px #6233b9;
 	font-size: 2vh;
 }
@@ -482,6 +482,98 @@ th {
 
 /***************   CONTACT   **************/
 
+.article-w-form {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.article-w-form > form {
+		box-shadow: 0px 0px 24px 4px #6233b9;
+		margin-bottom: 2em;
+		text-align: center;
+		padding: 4em 2em;
+}
+
+.article-w-form > form > fieldset > div {
+	margin: 1em 0;
+}
+
+.article-w-form > form > fieldset > div > p {
+	text-align: center;
+	margin-bottom: .3em;
+	color: black;
+	text-shadow: none;
+}
+
+
+fieldset {
+	font-family: RobotoMono;
+	margin: 1.5em 0;
+	text-align: center;
+	color: black;
+	text-shadow: 0 0 7px #6233b9;
+	font-size: 1.1em;
+}
+
+fieldset::selection {
+	background: #621e7d;
+	color: white;
+}
+
+
+label {
+	font-family: NunitoSans;
+	text-align: center;
+	color: black;
+	text-shadow: none;
+	font-size: 1.2em;
+	cursor: text;
+}
+
+label::selection {
+	background: #621e7d;
+	color: white;
+}
+
+
+option {
+	font-family: NunitoSans;
+}
+
+button {
+	font-family: NunitoSans;
+	width: 9em;
+	height: 2.5em;
+}
+
+legend {
+	font-family: NunitoSans;
+	text-align: center;
+	background: white;
+	margin: 0 auto;
+}
+
+legend::selection {
+	background: #621e7d;
+	color: white;
+}
+
+textarea {
+	accent-color: #6233b9;
+}
+
+
+input[type="text"],input[type="email"], input[type="tel"] {
+	width: 20em;
+	height: 1.8em;
+	accent-color: #6233b9;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	margin-right: 1em;
+	color: yellow;
+	accent-color: #6233b9;
+}
 
 
 
@@ -504,6 +596,13 @@ th {
 @font-face {
 	font-family: 'AzeretMono';
 	src: url('../fonts/AzeretMonoRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('../fonts/RobotoMonoRegular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: 400;
 }
