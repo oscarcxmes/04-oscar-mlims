@@ -16,17 +16,11 @@ html, body {
 header {
 	display: flex;
 	flex-direction: row;
-
 	background: white;
 	position: sticky;
 	top: 0;
-
-
-
 	border: 1px solid #a2a2a2;
 	background-color: #f4f4f4;
-	/**background-image: linear-gradient(to right, #cfbdd5,white,#cfbdd5,#cfbdd5);**/
-
 	box-shadow: 0px 0px 14px 0px #9885c5;
 }
 
@@ -40,7 +34,6 @@ header > a > img {
 header > nav {
 	text-align: center;
 	display: flex;
-	/*margin-left: 10%;*/
 }
 
 #menu a {
@@ -75,51 +68,15 @@ header > nav > ul > li > a:hover{
 	background-image: linear-gradient(to right, #6233b9,#521266);
 }
 
-.active {
-		background-image: linear-gradient(to right, #6233b9,#521266);
-		color: white;
-}
 
 /**SELECTION**/
-h1::selection {
+*::selection {
 	background: #621e7d;
 	color: white;
 }
-h2::selection {
-	background: #621e7d;
-	color: white;
-}
-h3::selection {
-	background: #621e7d;
-	color: white;
-}
-strong::selection {
-	background: #621e7d;
-	color: white;
-}
-p::selection {
-	background: #621e7d;
-	color: white;
-}
-
-a::selection {
-	background: #621e7d;
-	color: white;
-}
-
-td::selection {
-	background: #621e7d;
-	color: white;
-}
-
-th::selection {
-	background: #621e7d;
-	color: white;
-}
-
-caption::selection {
-		background: #621e7d;
-		color: white;
+footer > *::selection {
+	background: white;
+	color: #621e7d;
 }
 
 /**TEXT CONFIG**/
@@ -174,35 +131,9 @@ main a {
 	color: #8233b9;
 }
 
-
-
-
-
-
-.bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-  z-index: -100;
-}
-.bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-}
-
-
-
-/**PAGE LAYOUT (GENERAL)**/
+/**BASIC LAYOUT**/
 body {
-	background-image: url(../images/fondo1.jpg) no-repeat center center fixed;
+	background-image: url(../images/fondo1.jpg);
 	background-size: cover;
 }
 
@@ -221,6 +152,26 @@ section {
 	background: white;
 }
 
+.bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -100;
+}
+
+.bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
 /**FOOTER**/
 footer {
 	background-image: linear-gradient(to right, #6233b9,#521266);
@@ -237,7 +188,6 @@ footer > p {
 	margin-left: 2em;
 	margin-top: .8em;
 	margin-right: 2em;
-
 }
 
 footer > img {
@@ -248,7 +198,6 @@ footer > img {
 footer > p > a {
 	color: white;
 }
-
 
 /***************   INDEX   **************/
 
@@ -280,7 +229,6 @@ footer > p > a {
 
 /***************   ARTISTS   **************/
 
-
 .artist-box {
 	width: 80%;
 	border: 2px solid #6233b9;
@@ -293,16 +241,12 @@ footer > p > a {
 }
 
 .artist-box > div > figure {
-
 	margin: 0 2em;
 }
 
 .artist-box > div > figure > img{
 	border: 2px solid #6233b9;
 	box-shadow: 0px 0px 24px 4px #6233b9;
-
-
-
 }
 
 .artist-box > div > figure > figcaption{
@@ -310,23 +254,17 @@ footer > p > a {
 	text-align: center;
 	margin: 1em 0 0.5em 0;
 	font-family: NunitoSans;
-
-
 }
-
 
 .artist-box > div > p{
 	font-size: 1.5em;
 	margin-left: 1em;
 }
 
-
 .artist-box > h3{
 	padding-bottom: 0.2em;
 	background: #6233b9;
 	color: white;
-
-
 }
 
 aside {
@@ -371,7 +309,6 @@ aside > nav > ul > li > a {
 	display: block;
 	width: 12em;
 	padding: 1em 0;
-
 }
 
 .article-w-aside > p {
@@ -384,9 +321,7 @@ aside > nav > ul > li > a {
 	margin: 2em 0;
 }
 
-
 /***************   LOCATIONS   **************/
-
 
 .article-w-content > p {
 	margin: 0 5%;
@@ -439,13 +374,11 @@ aside > nav > ul > li > a {
 
 .address-description > p {
 	margin: 0 1em;
-	font-size: 3vh;
+	font-size: 1.5em;
 	line-height: 5vh;
 }
 
-
 /***************   TICKETS   **************/
-
 
 #tickets-section {
 	text-align: center;
@@ -492,6 +425,8 @@ th {
 		margin-bottom: 2em;
 		text-align: center;
 		padding: 4em 2em;
+		background-image: url(../images/form-background.jpg);
+		background-size: cover;
 }
 
 .article-w-form > form > fieldset > div {
@@ -505,7 +440,6 @@ th {
 	text-shadow: none;
 }
 
-
 fieldset {
 	font-family: RobotoMono;
 	margin: 1.5em 0;
@@ -514,12 +448,6 @@ fieldset {
 	text-shadow: 0 0 7px #6233b9;
 	font-size: 1.1em;
 }
-
-fieldset::selection {
-	background: #621e7d;
-	color: white;
-}
-
 
 label {
 	font-family: NunitoSans;
@@ -535,7 +463,6 @@ label::selection {
 	color: white;
 }
 
-
 option {
 	font-family: NunitoSans;
 }
@@ -544,39 +471,109 @@ button {
 	font-family: NunitoSans;
 	width: 9em;
 	height: 2.5em;
+	transition: .3s;
+	border-radius: 15px;
+}
+
+button:hover {
+	color: white;
+	background-image: linear-gradient(to right, #6233b9,#521266);
 }
 
 legend {
 	font-family: NunitoSans;
 	text-align: center;
-	background: white;
 	margin: 0 auto;
-}
-
-legend::selection {
-	background: #621e7d;
-	color: white;
 }
 
 textarea {
 	accent-color: #6233b9;
+	background: #efe8ff;
+	font-family: NunitoSans;
 }
-
 
 input[type="text"],input[type="email"], input[type="tel"] {
 	width: 20em;
 	height: 1.8em;
 	accent-color: #6233b9;
+	background: #f6f2ff;
+	font-family: NunitoSans;
 }
 
 input[type="radio"], input[type="checkbox"] {
 	margin-right: 1em;
 	color: yellow;
-	accent-color: #6233b9;
+	accent-color: #f6f2ff;
 }
 
+/***************   ABOUT US   **************/
 
+dl,dt,dd {
+	font-family: NunitoSans;
+}
 
+dl {
+	margin: 1em 0 2em 0;
+}
+
+dt {
+	margin-top: 1em;
+	font-size: 1.3em;
+	text-align: center;
+	font-family: BreeSerif;
+		color: #621e7d;
+	text-shadow: 2px 2px #beaaee;
+}
+
+dd {
+	font-size: 1.15em;
+}
+
+.content-video-box {
+	display: flex;
+	justify-content: center;
+}
+
+.socialnetworks {
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.next-to-h1 {
+	margin-top: 0;
+}
+
+/***************   SOCIAL MEDIA   **************/
+
+.article-w-promos {
+	margin: 0 auto;
+}
+
+.article-w-promos > section{
+	margin: 2em 0;
+}
+
+.article-w-promos p {
+	text-align: center;
+}
+
+.article-w-promos > h1 + section {
+	margin-top: 0;
+}
+
+/***************   PRIVACY POLICY   **************/
+
+#privacypolicy > p{
+	text-align: center;
+	margin: 0 2em;
+}
+
+#privacypolicy > ul {
+	list-style: none;
+	font-family: NunitoSans;
+	margin: 0 2em;
+	text-align: center;
+}
 
 /**FONTS**/
 @font-face {
