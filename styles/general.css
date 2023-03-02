@@ -87,6 +87,11 @@ p {
 	text-align: justify;
 }
 
+article  p {
+	margin: 1em 0;
+}
+
+
 strong {
 	color: #621e7d;
 	font-family: BreeSerif;
@@ -145,6 +150,11 @@ main {
 	box-shadow: 0px 0px 14px 0px #9885c5;
 	padding-bottom: 1em;
 	display: flex;
+}
+
+.article-w-aside {
+	width: 80%;
+	padding: 0 4em;
 }
 
 section {
@@ -269,7 +279,7 @@ footer > p > a {
 
 aside {
  	width: 20%;
- 	float: right;
+ 	flex: 1;
 }
 
 aside > nav {
@@ -307,13 +317,8 @@ aside > nav > ul > li > a {
 	letter-spacing: 1.2px;
 	text-align: center;
 	display: block;
-	width: 12em;
+	width: 100%;
 	padding: 1em 0;
-}
-
-.article-w-aside > p {
-	width: 80%;
-	margin-left: 6%;
 }
 
 .video-box {
@@ -323,8 +328,8 @@ aside > nav > ul > li > a {
 
 /***************   LOCATIONS   **************/
 
-.article-w-content > p {
-	margin: 0 5%;
+.article-w-content {
+	padding: 0 4em;
 }
 
 .location-box {
@@ -366,14 +371,15 @@ aside > nav > ul > li > a {
 
 .address-box > iframe {
 		box-shadow: 0px 0px 24px 4px #6233b9;
+		margin: 2em;
 }
 
 .address-description {
 	width: 66%;
+	margin-right: 2em;
 }
 
 .address-description > p {
-	margin: 0 1em;
 	font-size: 1.5em;
 	line-height: 5vh;
 }
