@@ -15,25 +15,23 @@ html, body {
 /**HEADER (NAV MENU)**/
 header {
 	display: flex;
-	flex-direction: row;
 	background: white;
 	position: sticky;
 	top: 0;
 	border: 1px solid #a2a2a2;
 	background-color: #f4f4f4;
 	box-shadow: 0px 0px 14px 0px #9885c5;
+	justify-content: space-between;
 }
 
 header > a > img {
 	width: 5em;
-	position: absolute;
-	right: 20px;
-	top: 2px;
+	margin-right: 1em;
+	margin-top: .2em;
 }
 
 header > nav {
 	text-align: center;
-	display: flex;
 }
 
 #menu a {
@@ -55,7 +53,7 @@ header > nav > ul > li {
 header > nav > ul > li > a {
 	text-decoration: none;
 	font-size: 20px;
-	font-family: "NunitoSans";
+	font-family: "NunitoSans", Arial, sans;
 	cursor: pointer;
 	color: 	#621e7d;
 	letter-spacing: 1.2px;
@@ -82,7 +80,7 @@ footer > *::selection {
 /**TEXT CONFIG**/
 
 p {
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans;
 	font-size: 1.3em;
 	text-align: justify;
 }
@@ -94,13 +92,13 @@ article  p {
 
 strong {
 	color: #621e7d;
-	font-family: BreeSerif;
+	font-family: "BreeSerif", Arial, sans-serif;
 }
 
 /**HEADERS CONFIG**/
 h1 {
 	color: #621e7d;
-	font-family: "BreeSerif";
+	font-family: "BreeSerif", Arial, sans-serif;
 	padding-bottom: 20px;
 	text-align: center;
 	font-size: 50px;
@@ -110,13 +108,13 @@ h1 {
 }
 
 #homeh1	{
-	font-family: CallingHeart;
+	font-family: "CallingHeart", Arial, Helvetica;
 	padding-top: 30px;
 }
 
 h2, h3 {
 	text-align: center;
-	font-family: BreeSerif;
+	font-family: "BreeSerif", Arial, sans-serif;
 }
 
 h2 {
@@ -193,7 +191,7 @@ footer {
 }
 
 footer > p {
-	font-family: AzeretMono;
+	font-family: "AzeretMono", Arial, monospace;
 	color: white;
 	margin-left: 2em;
 	margin-top: .8em;
@@ -263,7 +261,7 @@ footer > p > a {
 	color: #6233b9;
 	text-align: center;
 	margin: 1em 0 0.5em 0;
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, serif;
 }
 
 .artist-box > div > p{
@@ -311,7 +309,7 @@ aside > nav > ul > li:hover{
 aside > nav > ul > li > a {
 	text-decoration: none;
 	font-size: 100%;
-	font-family: "NunitoSans";
+	font-family: "NunitoSans", Arial, sans-serif;
 	cursor: pointer;
 	color: 	#621e7d;
 	letter-spacing: 1.2px;
@@ -344,7 +342,7 @@ aside > nav > ul > li > a {
 	text-align: center;
 	color: #8600bb;
 	text-shadow: 0 0 7px #cf00ee;
-  font-family: BreeSerif;
+  font-family: "BreeSerif", Arial, sans-serif;
   margin-bottom: 1%;
   background: #6233b9;
 	color: white;
@@ -363,7 +361,7 @@ aside > nav > ul > li > a {
 .address-box > address {
 	margin-bottom: .5em;
 	text-align: center;
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 	color: black;
 	text-shadow: 0 0 7px #6233b9;
 	font-size: 2vh;
@@ -400,7 +398,7 @@ aside > nav > ul > li > a {
 }
 
 caption {
-	font-family: BreeSerif;
+	font-family: "BreeSerif", Arial, sans-serif;
 	font-size: 2.5em;
 	color: #621e7d;
 	text-shadow: 2px 2px #beaaee;
@@ -409,7 +407,7 @@ caption {
 
 td, th {
 	padding: 5px;
-	font-family: NunitoSans;
+	font-family: "NunitoSans", ARial, sans-serif;
 }
 
 th {
@@ -447,7 +445,7 @@ th {
 }
 
 fieldset {
-	font-family: RobotoMono;
+	font-family: "RobotoMono", Arial, monospace;
 	margin: 1.5em 0;
 	text-align: center;
 	color: black;
@@ -456,7 +454,7 @@ fieldset {
 }
 
 label {
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 	text-align: center;
 	color: black;
 	text-shadow: none;
@@ -470,11 +468,11 @@ label::selection {
 }
 
 option {
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 }
 
 button {
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 	width: 9em;
 	height: 2.5em;
 	transition: .3s;
@@ -487,7 +485,7 @@ button:hover {
 }
 
 legend {
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -495,7 +493,7 @@ legend {
 textarea {
 	accent-color: #6233b9;
 	background: #efe8ff;
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 }
 
 input[type="text"],input[type="email"], input[type="tel"] {
@@ -503,7 +501,7 @@ input[type="text"],input[type="email"], input[type="tel"] {
 	height: 1.8em;
 	accent-color: #6233b9;
 	background: #f6f2ff;
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -515,7 +513,7 @@ input[type="radio"], input[type="checkbox"] {
 /***************   ABOUT US   **************/
 
 dl,dt,dd {
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 }
 
 dl {
@@ -526,7 +524,7 @@ dt {
 	margin-top: 1em;
 	font-size: 1.3em;
 	text-align: center;
-	font-family: BreeSerif;
+	font-family: "BreeSerif", Arial, sans-serif;
 		color: #621e7d;
 	text-shadow: 2px 2px #beaaee;
 }
@@ -576,7 +574,7 @@ dd {
 
 #privacypolicy > ul {
 	list-style: none;
-	font-family: NunitoSans;
+	font-family: "NunitoSans", Arial, sans-serif;
 	margin: 0 2em;
 	text-align: center;
 }
